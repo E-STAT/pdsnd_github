@@ -280,10 +280,10 @@ def raw_data(df, mark_place):
                              "\n\n>",
                              ('a', 'd'))
 
-        if asc_or_desc == 'a':
-            asc_or_desc = True
-        elif asc_or_desc == 'd':
+        if asc_or_desc == 'd':
             asc_or_desc = False
+        elif asc_or_desc == 'a':
+            asc_or_desc = True
 
         if sort_df == 'st':
             df = df.sort_values(['Start Time'], ascending=asc_or_desc)
